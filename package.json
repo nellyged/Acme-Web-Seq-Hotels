@@ -1,0 +1,23 @@
+{
+  "name": "Acme-Web-Seq-Hotels",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:dev": "DATABASE_URL=postgres://localhost/acme-hotel nodemon server.js",
+    "seed:test": "DATABASE_URL=postgres://localhost/acme-hotel nodemon db.js",
+    "test": "DATABASE_URL=postgres://localhost/acme-hotel/ ./node_modules/mocha/bin/mocha spec.js --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.10",
+    "pg": "^7.8.0",
+    "sequelize": "^4.42.0",
+    "supertest": "^3.4.2"
+  }
+}
